@@ -1,0 +1,50 @@
+//Подключение дополнительной библиотеки
+@import "../../node_modules/normalize.scss/normalize";
+
+
+//Подключение своих шрифтов
+@import "global/fonts";
+//Палитра цветов проекта
+@import "global/colors";
+//Миксины проекта
+@import "global/mixins";
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+*
+*::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: $ff-main;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+.container{
+    max-width: 61.125rem;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@import "moduls/header";
+@import "moduls/row1";
+@import "moduls/row2";
+@import "moduls/row3";
+@import "moduls/table";
+@import "moduls/footer";

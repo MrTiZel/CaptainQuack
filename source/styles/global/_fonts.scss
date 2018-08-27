@@ -1,0 +1,24 @@
+@font-face{
+    font-family: "";
+    src: url("../fonts/") format("");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "";
+    src: url("../fonts/") format("");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "";
+    src: url("../fonts/") format("");
+    font-weight: bold;
+    font-style: normal;
+}
+
+$ff-main: '';
+$ff-main-bold: '';
+$ff-main-light: '';

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Captain Quack</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img class="logo__img" src="images/DUCK.png" alt="Captain Quack"></div>
+    </header>
+    <div class="container">
+      <h2 class="container__header-text">!Ay caramba!</h2>
+      <form class="form">
+        <input class="form__title" type="text" name="title" placeholder="Название">
+        <input class="form__year" type="text" name="year" placeholder="Год">
+        <input class="form__price" type="text" name="price" placeholder="Цена">
+        <input class="form__description" type="text" name="description" placeholder="Описание">
+        <input class="form__color--white" type="radio" name="color" value="white">
+        <input class="form__color--black" type="radio" name="color" value="black">
+        <input class="form__color--gray" type="radio" name="color" value="gray">
+        <input class="form__color--red" type="radio" name="color" value="red">
+        <input class="form__color--green" type="radio" name="color" value="green">
+        <select class="form__status" name="status">
+          <option>Статус</option>
+          <option value="inStock">В наличии</option>
+          <option value="expects">Ожидается</option>
+          <option value="outOfStock">Нет в наличии</option>
+        </select>
+        <input class="form__submit" type="submit" name="submit" value="Отправить &gt;">
+      </form>
+    </div>
+    <div class="container">
+      <h3 class="container__header-text">Автомобили в наличии</h3>
+      <table class="table">
+        <thead class="table__header">
+          <tr class="table__header-row">
+            <th class="table__header-title">Название</th>
+            <th class="table__header-year">Год</th>
+            <th class="table__header-color">Цвет</th>
+            <th class="table__header-status">Статус</th>
+            <th class="table__header-price">Цена</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <tr class="table__body-row">
+            <td class="table__body-title">1.6 MT Ambiente 85 л.с. МКПП <span class="table__body-title--small-text">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, M</span></td>
+            <td class="table__body-year">
+               2012</td>
+            <td class="table__body-color"> <i class="table__body-color--black"></i></td>
+            <td class="table__body-status">Ожидается</td>
+            <td class="table__body-price">
+               1 689 000 руб.</td>
+            <td class="table__body-delete">
+              <button>Удалить</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__body-title">
+               1.6 MT Trend 105 л.с. МКПП 1</td>
+            <td class="table__body-year">
+               2012</td>
+            <td class="table__body-color"> <i class="table__body-color--white"></i></td>
+            <td class="table__body-status">Ожидается</td>
+            <td class="table__body-price">
+               1 189 900 руб.</td>
+            <td class="table__body-delete">
+              <button>Удалить</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__body-title">
+               1.6 MT Trend 105 л.с. МКПП</td>
+            <td class="table__body-year">
+               2012</td>
+            <td class="table__body-color"> <i class="table__body-color--black"></i></td>
+            <td class="table__body-status">В наличии</td>
+            <td class="table__body-price">
+               1 459 000 руб.</td>
+            <td class="table__body-delete">
+              <button>Удалить</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__body-title">
+               1.6 PowerShift Trend Sport 105 л.с. АКПП</td>
+            <td class="table__body-year">
+               2012</td>
+            <td class="table__body-color"> <i class="table__body-color--gray"></i></td>
+            <td class="table__body-status">Ожидается</td>
+            <td class="table__body-price">
+               1 459 000 руб.</td>
+            <td class="table__body-delete">
+              <button>Удалить</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__body-title">
+               2.0 MT Trend Sport 150 л.с. МКПП</td>
+            <td class="table__body-year">
+               2012</td>
+            <td class="table__body-color"> <i class="table__body-color--red"></i></td>
+            <td class="table__body-status">Ожидается</td>
+            <td class="table__body-price">
+               786 000 руб.</td>
+            <td class="table__body-delete">
+              <button>Удалить</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__body-title">
+               2.0 PowerShift Trend Sport 150 л.с. АКПП<span class="table__body-title--small-text">+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, M</span></td>
+            <td class="table__body-year">
+               2012</td>
+            <td class="table__body-color"> <i class="table__body-color--green"></i></td>
+            <td class="table__body-status">Нет в наличии</td>
+            <td class="table__body-price">
+               821 000 руб.</td>
+            <td class="table__body-delete">
+              <button>Удалить</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer class="footer">
+      <p class="footer__text">© 2015 CAPTAIN QUACK <br/> Десница тысячелетия и моллюск! </p>
+    </footer>
+  </body>
+</html>
