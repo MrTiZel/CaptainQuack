@@ -1,0 +1,104 @@
+.form{
+    &__row-bottom-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    }
+    &__radio{
+        width: 100%;
+        margin-right: 23px;
+        span{
+            display: block;
+            margin-bottom: 10px;
+            color: $text-color-gray-text;
+        }
+    }
+    [id^=radio-] {
+      display: none;
+    }
+    [id^=radio-]:checked + label {
+        width: 18px;
+        height: 18px;
+        border: $border-color-red 3px solid;
+    }
+
+    [id^=radio-1] + label {
+      display:inline-block;
+      width: 21px;
+      height: 21px;
+      margin-right: 23px;
+      border: $border-color-gray 1px solid;
+      border-radius: 50%;
+      background-color: $pick-circle-color-white;
+    }
+    [id^=radio-2] + label {
+      display:inline-block;
+      width: 21px;
+      height: 21px;
+      margin-right: 23px;
+      border-radius: 50%;
+      background-color: $pick-circle-color-black;
+    }
+    [id^=radio-3] + label {
+      display:inline-block;
+      width: 21px;
+      height: 21px;
+      margin-right: 23px;
+      border-radius: 50%;
+      background-color: $pick-circle-color-gray;
+    }
+    [id^=radio-4] + label {
+      display:inline-block;
+      width: 21px;
+      height: 21px;
+      margin-right: 23px;
+      border-radius: 50%;
+      background-color: $pick-circle-color-red;
+    }
+    [id^=radio-5] + label {
+      display:inline-block;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background-color: $pick-circle-color-green;
+    }
+
+    &__status{
+        color: $text-color-gray-text;
+        outline: none;
+        width: 100%;
+        height: 40px;
+        border: $border-color-gray 1px solid;
+        border-bottom: $border-color-gray 2px solid;
+        margin-right: 23px;
+
+        &:hover{
+            border-bottom: $border-color-red 2px solid;
+        }
+        &:focus{
+            border-bottom: $border-color-black 2px solid;
+        }
+    }
+    &__submit{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-color-button;
+        font-weight: bold;
+        border: 0;
+        outline: none;
+        border-radius: 10px;
+
+        &[value="Отправить >"]{
+            text-align: center;
+            font-size: 16px;
+            color: $text-color-white-text;
+        }
+        &:hover{
+            border: $border-color-black 2px solid;
+        }
+    }
+}

@@ -22,18 +22,27 @@
         <div class="form__row-middle-line">
           <input class="form__description" type="text" name="description" placeholder="Описание">
         </div>
-        <input class="form__color--white" type="radio" name="color" value="white">
-        <input class="form__color--black" type="radio" name="color" value="black">
-        <input class="form__color--gray" type="radio" name="color" value="gray">
-        <input class="form__color--red" type="radio" name="color" value="red">
-        <input class="form__color--green" type="radio" name="color" value="green">
-        <select class="form__status" name="status">
-          <option>Статус</option>
-          <option value="inStock">В наличии</option>
-          <option value="expects">Ожидается</option>
-          <option value="outOfStock">Нет в наличии</option>
-        </select>
-        <input class="form__submit" type="submit" name="submit" value="Отправить &gt;">
+        <div class="form__row-bottom-line">
+          <div class="form__radio"><span>Цвет </span>
+            <input class="form__color--white" id="radio-1" type="radio" name="color" value="white">
+            <label for="radio-1"></label>
+            <input class="form__color--black" id="radio-2" type="radio" name="color" value="black">
+            <label for="radio-2"></label>
+            <input class="form__color--gray" id="radio-3" type="radio" name="color" value="gray">
+            <label for="radio-3"></label>
+            <input class="form__color--red" id="radio-4" type="radio" name="color" value="red">
+            <label for="radio-4"></label>
+            <input class="form__color--green" id="radio-5" type="radio" name="color" value="green">
+            <label for="radio-5"></label>
+          </div>
+          <select class="form__status" name="status">
+            <option>Статус</option>
+            <option value="inStock">В наличии</option>
+            <option value="expects">Ожидается</option>
+            <option value="outOfStock">Нет в наличии</option>
+          </select>
+          <input class="form__submit" type="submit" name="submit" value="Отправить &gt;">
+        </div>
       </form>
     </div>
     <div class="container">

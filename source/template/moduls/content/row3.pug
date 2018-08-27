@@ -1,13 +1,21 @@
-input.form__color--white(type="radio" name="color" value="white")
-input.form__color--black(type="radio" name="color" value="black")
-input.form__color--gray(type="radio" name="color" value="gray")
-input.form__color--red(type="radio" name="color" value="red")
-input.form__color--green(type="radio" name="color" value="green")
+.form__row-bottom-line
+    .form__radio
+        span Цвет 
+        input.form__color--white(id="radio-1" type="radio" name="color" value="white")
+        label(for="radio-1")
+        input.form__color--black(id="radio-2" type="radio" name="color" value="black")
+        label(for="radio-2")
+        input.form__color--gray(id="radio-3" type="radio" name="color" value="gray")
+        label(for="radio-3")
+        input.form__color--red(id="radio-4" type="radio" name="color" value="red")
+        label(for="radio-4")
+        input.form__color--green(id="radio-5" type="radio" name="color" value="green")
+        label(for="radio-5")
 
-select.form__status(name="status")
-    option Статус
-    option(value="inStock") В наличии
-    option(value="expects") Ожидается
-    option(value="outOfStock") Нет в наличии
+    select.form__status(name="status")
+        option Статус
+        option(value="inStock") В наличии
+        option(value="expects") Ожидается
+        option(value="outOfStock") Нет в наличии
 
-input.form__submit(type="submit" name="submit" value="Отправить >")
+    input.form__submit(type="submit" name="submit" value="Отправить >")
