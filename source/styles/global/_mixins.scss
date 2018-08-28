@@ -16,19 +16,19 @@
 }
 
 @mixin MW720sm{
-    @media only screen and (min-width: 45em) {
-        .container {
-			width: 46rem;
-		}
+    @media screen and (max-width: 721px) {
+        @content;
+    }
+}
+
+@mixin MW580{
+    @media screen and (max-width: 581px) {
         @content;
     }
 }
 
 @mixin MW360{
     @media only screen and (min-width: 22.5em) {
-        .container {
-			width: 23.5rem;
-		}
         @content;
     }
 }

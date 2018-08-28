@@ -64,6 +64,11 @@
       background-color: $pick-circle-color-green;
     }
 
+        @include MW720sm(){
+            [id^=radio-] + label{
+                margin-right: 5px;
+            }
+        }
     &__status{
         color: $text-color-gray-text;
         outline: none;
@@ -99,6 +104,16 @@
         }
         &:hover{
             border: $border-color-black 2px solid;
+        }
+    }
+    @include MW580(){
+        &__row-bottom-line{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        &__status{
+            margin: 30px 0;
         }
     }
 }

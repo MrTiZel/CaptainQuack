@@ -6,6 +6,7 @@
         display: block;
         font-size: 12px;
     }
+
     &__body-color--black{
         display: block;
         margin-left: 5px;
@@ -85,7 +86,26 @@
     &__header-null{
         border-top-right-radius: 10px;
     }
-
+    @include MW720sm(){
+        &__header-title {
+            width: 469px;
+        }
+        &__header-year {
+            width: 50px;
+        }
+        &__header-color {
+            width: 39px;
+        }
+        &__header-status {
+            width: 109px;
+        }
+        &__header-price {
+            width: 240px;
+        }
+        &__header-null{
+            border-top-right-radius: 10px;
+        }
+    }
     &__body{
         color: $text-color-black-header;
         tr{
@@ -128,6 +148,44 @@
                 background: $text-color-black-header;
                 color: $text-color-white-text;
                 border-radius: 15px;
+            }
+        }
+    }
+
+    @include MW580(){
+        .table{
+            &__header{
+                display: none;
+            }
+            &__body-title{
+                text-align: center;
+                display: block;
+                margin-left: -15px;
+
+            }
+            &__body-year{
+                display: inline-block;
+                //margin-left: 10px;
+
+            }
+            &__body-color{
+                display: inline-block;
+                margin-left: 50px;
+
+            }
+            &__body-status{
+                display: inline-block;
+                margin-right: 10px;
+                float: right;
+
+            }
+            &__body-price{
+                display: inline-block;
+
+            }
+            &__body-delete{
+                display: inline-block;
+                float: right;
             }
         }
     }
